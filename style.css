@@ -4,6 +4,7 @@
 }
 body {
     background-color: #FAF7F2;
+    min-width: 559px;
 }
 section {
   margin-bottom: 4rem;
@@ -214,6 +215,7 @@ section {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  
 }
 .menu-items2 {
   display: flex;
@@ -235,8 +237,9 @@ section {
 .product-list {
   display: flex;
   justify-content: center;
-  gap:3rem;
+  gap:1rem;
   margin-top: 6rem;
+  
 }
 .product{
   display: flex;
@@ -248,7 +251,7 @@ section {
 .product-info {
   display: flex;
   flex-direction: column;
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem;
   font-family: "Barlow";
 }
 .product-price {
@@ -264,18 +267,20 @@ section {
 footer {
   background-color: black;
   color: white;
+  
 }
 .footer-main{
   display: flex;
   gap: 4rem;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: solid white 0.05rem;
+ 
 }
   
 .contact {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0 0 10rem;
+  margin: 3rem 0 0 7rem;
   color:#5F5F5F;
 }
 .location {
@@ -318,7 +323,7 @@ footer {
 .hot-menu-items {
   display: flex;
   flex-direction: column;
-  line-height: 2.5rem;
+  line-height: 1rem;
 }
 .hot-menu-items a{
   text-decoration: none;
@@ -357,18 +362,11 @@ footer {
   align-items: center;
   color:#5F5F5F;
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .banner p {
     display: none;
   }
-  .menu-bar{
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-  }
-  .menu-items {
-    width: 30%;
-  }
+  
   .suggest {
     flex-direction: column;
     align-items: center;
@@ -387,17 +385,7 @@ footer {
     margin-top: 2rem;
     font-size: 3rem;
   }
-  .menu-bar2{
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: space-between;
-  }
-  .menu-items2:nth-child(even) {
-   justify-content: end;
-  }
-  .menu-items2 {
-    width: 27%;
-  }
+    
   .product-list {
     flex-direction: column;
     gap: 1rem;
@@ -416,12 +404,14 @@ footer {
   .contact {
     margin: 2rem 0 2rem 2rem;
   }
-  .hot-menu {
+  .hot-menu-items{
     margin-left: 2rem;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
+
   }
   .hot-menu-title{
-    margin: 0;
+    margin: 2rem;
   }
   .instagram {
     margin: 0 0 4rem 2rem;
@@ -431,5 +421,39 @@ footer {
   }
   .footer-copyright {
     padding: 1rem;
+  }
+}
+@media (max-width: 1050px) {
+  .menu-bar{
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  .menu-items {
+    width: 30%;
+  }
+  .menu-bar2{
+    flex-wrap: wrap;
+    gap: 1rem;  
+    column-gap: 8rem;    
+    margin: 0 4rem;
+    justify-content: space-around;
+  }
+  .product-list {
+    flex-wrap: wrap;
+  }
+  .hot-menu {
+   margin-left: 0;
+   width: 300px;
+  }
+  .footer-main {
+    gap:1rem;
+  }
+  .hot-menu-items{
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+  .instagram {
+    margin-left: 2rem;
   }
 }
